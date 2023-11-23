@@ -29,5 +29,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/jckhoe-playground/testificate:latest
+          tags: ghcr.io/jckhoe-sandbox/testificate:latest
 
