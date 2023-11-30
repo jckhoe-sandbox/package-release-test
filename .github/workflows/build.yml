@@ -41,6 +41,7 @@ jobs:
 
       - name: Check artifacts
         run: |
+          ls -lart
           cat bin/test.txt
 
       - name: Log in to GitHub Container Registry
