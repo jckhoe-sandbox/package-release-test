@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build-artifacts
-          path: test.txt
+          path: artifact/test.txt
 
   deploy:
     runs-on: ubuntu-latest
@@ -47,3 +47,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build-artifacts
+
+      - name: Check artifacts
+        run: |
+          cat artifact/test.txt
