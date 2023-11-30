@@ -1,5 +1,5 @@
 
-name: Docker Build and Publish
+name: Build
 
 on:
   push:
@@ -31,3 +31,8 @@ jobs:
           push: true
           tags: ghcr.io/jckhoe-sandbox/testificate:latest
 
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-artifacts
+          path: test.txt
