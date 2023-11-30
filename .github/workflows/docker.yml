@@ -14,7 +14,7 @@ permissions:
   packages: write
 
 jobs:
-  build-and-push:
+  deploy:
     runs-on: ubuntu-latest
     needs: build
     steps:
